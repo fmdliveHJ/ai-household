@@ -3,6 +3,8 @@ node_modules/
 dist/
 build/
 .gradle/
+server/bin/
+server/build/
 .idea/
 .vscode/
 .DS_Store
