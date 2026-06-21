@@ -1,21 +1,45 @@
-# household
+# BabyLog
 
-가계부/생활비 관리 앱 시작 프로젝트.
+아기 수유, 기저귀, 수면, 성장 기록을 빠르게 남기고 하루 상태를 한눈에 보는 육아 기록 앱입니다.
 
 ## 구성
+
 - `mobile` — Expo + React Native + TypeScript
 - `server` — Spring Boot API
 - `infra` — PostgreSQL 및 로컬 개발용 설정
 - `docs` — 구조/기획 문서
+- `legacy` — 이전 가계부 도메인 코드 보관
 
 ## MVP
-1. 회원가입/로그인
-2. 수입/지출 등록
-3. 거래 목록 조회
-4. 월별 합계
-5. 카테고리 관리
 
-## 다음 실행 순서
-1. mobile 실행: `npm install && npm run dev`
-2. server 실행: `./gradlew bootRun` 또는 Gradle/Maven으로 실행
-3. PostgreSQL 준비 후 `application.yml` 수정
+1. 아기 프로필 등록/조회
+2. 수유 기록 등록/조회
+3. 기저귀 기록 등록/조회
+4. 수면 기록 등록/조회
+5. 오늘 요약: 수유 횟수/양, 기저귀 횟수, 수면 시간
+
+## 실행
+
+### 모바일
+
+```bash
+cd mobile
+npm install
+npm run dev
+```
+
+### 서버
+
+```bash
+cd server
+./gradlew bootRun --args='--spring.profiles.active=local'
+```
+
+## API 초안
+
+- `GET /api/health`
+- `POST /api/babies`
+- `GET /api/babies`
+- `POST /api/logs`
+- `GET /api/logs?babyId=1`
+- `GET /api/summaries/today?babyId=1`
