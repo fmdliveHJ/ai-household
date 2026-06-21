@@ -4,5 +4,6 @@ public enum BabyLogType {
     FEEDING,
     DIAPER,
     SLEEP,
-    GROWTH
+    GROWTH,
+    DIARY
 }

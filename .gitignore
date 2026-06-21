@@ -5,6 +5,7 @@ build/
 .gradle/
 server/bin/
 server/build/
+mobile/screenshots/
 .idea/
 .vscode/
 .DS_Store

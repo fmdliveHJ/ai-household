@@ -28,7 +28,28 @@ npm install
 npm run dev
 ```
 
+### 로컬 PostgreSQL
+
+Docker가 없으면 Homebrew PostgreSQL 16으로 개발 DB를 실행합니다.
+
+```bash
+brew services start postgresql@16
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+createuser household
+createdb -O household babylog
+psql -d postgres -c "ALTER USER household WITH PASSWORD 'household';"
+```
+
 ### 서버
+
+PostgreSQL에 저장하려면 기본 프로필로 실행합니다.
+
+```bash
+cd server
+./gradlew bootRun
+```
+
+H2 임시 DB로 실행하려면 local 프로필을 사용합니다.
 
 ```bash
 cd server
