@@ -1,9 +1,9 @@
 services:
   postgres:
     image: postgres:16
-    container_name: household-postgres
+    container_name: babylog-postgres
     environment:
-      POSTGRES_DB: household
+      POSTGRES_DB: babylog
       POSTGRES_USER: household
       POSTGRES_PASSWORD: household
     ports:

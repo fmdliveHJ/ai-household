@@ -1,8 +1,8 @@
 spring:
   application:
-    name: household-server
+    name: babylog-server
   datasource:
-    url: jdbc:postgresql://localhost:5432/household
+    url: jdbc:postgresql://localhost:5432/babylog
     username: household
     password: household
   jpa:

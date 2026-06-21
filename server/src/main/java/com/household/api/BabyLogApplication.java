@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HouseholdApplication {
+public class BabyLogApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(HouseholdApplication.class, args);
+        SpringApplication.run(BabyLogApplication.class, args);
     }
 }

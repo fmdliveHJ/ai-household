@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "household-mobile",
-    "slug": "household-mobile",
+    "name": "BabyLog",
+    "slug": "babylog",
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light"
